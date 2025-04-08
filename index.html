@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title">Social media survey form</h1>
+    <p id="description">This is a simple form</p>
+    <form id="survey-form">
+        <label id="name-label" for="name">Name</label>
+        <input id="name" type="text" required placeholder="Your name">
+
+        <label id="email-label" for="email">Email</label>
+        <input id="email" type="email" required placeholder="youremail@email.com">
+
+        <label id="number-label" for="number">Age</label>
+        <input id="number" type="number" min="1" max="100" placeholder="21">
+
+        <label for="dropdown">Drink?</label>
+        <select name="dropdown" id="dropdown">
+
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+        <label for="">Civil status</label>
+        <div id="single-married">
+            <input name="single-married" id="single" type="radio" value="single">
+            <label id="single-label" for="single">Single</label>
+            <input name="single-married" type="radio" name="married" id="married" value="married">
+            <label id="married-label" for="married">Married</label>
+        </div>
+
+        <label for="checkbox">Most used social media platform</label>
+        <div id="checkbox"><input type="checkbox" name="" id="" value="pc">PC
+            <input type="checkbox" name="" id="" value="phone">Instagram
+            <input type="checkbox" name="" id="" value="tablet">X
+            <input type="checkbox" name="" id="" value="tablet">TikTok
+            <input type="checkbox" name="" id="" value="tablet">Others
+        </div>
+        <label for="checkbox">Most used device for check social media</label>
+        <div id="checkbox"><input type="checkbox" name="" id="" value="pc">PC
+            <input type="checkbox" name="" id="" value="phone">Phone
+            <input type="checkbox" name="" id="" value="tablet">Tablet
+        </div>
+
+
+        <textarea name="textarea" id="textarea" placeholder="What's your opinion on social media"></textarea>
+
+        <input id="submit" type="submit">
+    </form>
+
+</body>
+
+</html>
